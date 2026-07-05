@@ -14,6 +14,16 @@ layout: default
   {% endunless %}
 {% endif %}
 
+<div class="page__nav">
+    {% if page.previous %}
+        <a href="{{ page.previous.url }}">&#8592;</a>
+    {% endif %}
+
+    {% if page.next %}
+        <a href="{{ page.next.url }}">&#8594;</a>
+    {% endif %}
+</div>
+
 <div id="main" role="main">
   {% include sidebar.html %}
 
@@ -83,9 +93,9 @@ layout: default
         {% include page__taxonomy.html %}
       </footer>
 
-      {% if page.share %}{% include social-share.html %}{% endif %}
+      <!-- {% if page.share %}{% include social-share.html %}{% endif %} -->
 
-      {% include post_pagination.html %}
+      <!-- {% include post_pagination.html %} -->
     </div>
 
     {% if site.comments.provider and page.comments %}

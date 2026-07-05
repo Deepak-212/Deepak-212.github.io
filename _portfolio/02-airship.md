@@ -5,7 +5,7 @@ excerpt: "Developed a 6DOF nonlinear airship model."
 header:
   teaser: /images/projects/airship.png
 ---
-
+<img src="/images/projects/airship.png" style="width:100%; border-radius:8px; margin-bottom:25px;">
 Research Intern • CSIR-NAL, Flight Mechanics and Control Division
 
 Developed a nonlinear six-degree-of-freedom mathematical model of a high altitude airship in MATLAB/Simulink. Identified the trim conditions and studied the open loop response

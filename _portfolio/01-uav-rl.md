@@ -5,7 +5,7 @@ excerpt: "Developed a safe RL controller for altitude tracking of a 6-DOF fixed-
 header:
   teaser: /images/projects/uav-rl.png
 ---
-
+<img src="/images/projects/uav-rl.png" style="width:100%; border-radius:8px; margin-bottom:25px;">
 Research Intern • Robotic Research Centre, IIIT Hyderabad
 
 Designed and implemented a nonlinear 6-DOF fixed-wing aircraft simulator based on the Beard & McLain aircraft model. Built a custom Gymnasium environment and trained a PPO controller for altitude tracking while incorporating a Control Barrier Function (CBF) safety filter to improve safety during learning and deployment.
