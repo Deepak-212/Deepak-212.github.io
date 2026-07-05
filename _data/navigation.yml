@@ -12,7 +12,7 @@ main:
     url:  /portfolio/
         
   - title: "Experience"
-    url: /year-archive/
+    url: /experience/
     
   - title: "CV"
     url: /files/Deepak_CV.pdf
