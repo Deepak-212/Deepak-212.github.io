@@ -4,6 +4,7 @@ collection: portfolio
 excerpt: "Developed a safe RL controller for altitude tracking of a 6-DOF fixed-wing UAV."
 header:
   teaser: /images/uav-rl.png
+tags: ["Python", "PyTorch", "Gymnasium", "Stable Baselines3", "NumPy"]
 ---
 <img src="/images/uav-rl.png" style="width:100%; border-radius:8px; margin-bottom:25px;">
 Research Intern • Robotic Research Centre, IIIT Hyderabad

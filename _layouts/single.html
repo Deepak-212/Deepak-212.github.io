@@ -14,15 +14,13 @@ layout: default
   {% endunless %}
 {% endif %}
 
-<div class="page__nav">
-    {% if page.previous %}
-        <a href="{{ page.previous.url }}">&#8592;</a>
-    {% endif %}
-
-    {% if page.next %}
-        <a href="{{ page.next.url }}">&#8594;</a>
-    {% endif %}
-</div>
+{% if page.collection == 'portfolio' %}
+  <div class="page__top-nav">
+    <a href="{{ '/portfolio/' | prepend: site.baseurl }}" class="back-link">
+      <i class="fa fa-chevron-left" aria-hidden="true"></i> Back to Projects
+    </a>
+  </div>
+{% endif %}
 
 <div id="main" role="main">
   {% include sidebar.html %}
@@ -85,6 +83,35 @@ layout: default
 
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
+
+      {% if page.collection == 'portfolio' and (page.previous or page.next) %}
+        <hr class="page__nav-separator">
+        <div class="page__nav">
+          {% if page.previous %}
+            <a href="{{ page.previous.url | prepend: site.baseurl }}" class="page__nav-btn prev">
+              <i class="fa fa-chevron-left" aria-hidden="true"></i>
+              <div class="page__nav-btn-text">
+                <span class="nav-label">Previous Project</span>
+                <span class="nav-title">{{ page.previous.title | strip_html | truncate: 35 }}</span>
+              </div>
+            </a>
+          {% else %}
+            <div class="page__nav-btn prev disabled"></div>
+          {% endif %}
+
+          {% if page.next %}
+            <a href="{{ page.next.url | prepend: site.baseurl }}" class="page__nav-btn next">
+              <div class="page__nav-btn-text">
+                <span class="nav-label">Next Project</span>
+                <span class="nav-title">{{ page.next.title | strip_html | truncate: 35 }}</span>
+              </div>
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </a>
+          {% else %}
+            <div class="page__nav-btn next disabled"></div>
+          {% endif %}
+        </div>
+      {% endif %}
 
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}

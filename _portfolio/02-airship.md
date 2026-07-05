@@ -4,6 +4,7 @@ collection: portfolio
 excerpt: "Developed a 6DOF nonlinear airship model."
 header:
   teaser: /images/airship.png
+tags: ["MATLAB", "Simulink", "Control Systems"]
 ---
 <img src="/images/airship.png" style="width:100%; border-radius:8px; margin-bottom:25px;">
 Research Intern • CSIR-NAL, Flight Mechanics and Control Division
