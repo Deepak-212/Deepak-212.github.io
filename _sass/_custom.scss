@@ -31,9 +31,9 @@ a {
    PORTFOLIO GRID & PROJECT CARDS
    ========================================================================== */
 .portfolio-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1.25rem;
   margin-top: 1.5rem;
 }
 
@@ -44,108 +44,49 @@ a {
   border: 1px solid var(--global-border-color);
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-
-  @include breakpoint($medium) {
-    flex-direction: row;
-    align-items: stretch;
-  }
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  text-decoration: none !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 
   &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
     border-color: var(--global-link-color);
 
     .project-card__image img {
-      transform: scale(1.03);
+      transform: scale(1.05);
     }
-    
-    .project-card__title a {
+
+    .project-card__title {
       color: var(--global-link-color);
-      text-decoration: none;
     }
   }
 }
 
 .project-card__image {
-  flex: 1.2;
-  min-height: 200px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   position: relative;
   background-color: var(--global-border-color);
-
-  @include breakpoint($medium) {
-    max-width: 40%;
-    min-height: auto;
-  }
-
-  a {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
     display: block;
+    transition: transform 0.3s ease;
   }
-}
-
-.project-card__content {
-  flex: 2;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .project-card__title {
-  margin-top: 0;
-  margin-bottom: 0.75rem;
-  font-size: 1.4rem;
-  font-weight: 700;
-  
-  a {
-    color: var(--global-text-color);
-    text-decoration: none;
-    
-    &:hover {
-      color: var(--global-link-color);
-      text-decoration: none;
-    }
-  }
-}
-
-.project-card__excerpt {
-  margin-top: 0;
-  margin-bottom: 1.25rem;
-  font-size: 0.95rem;
-  color: var(--global-text-color-light);
-  line-height: 1.5;
-}
-
-.project-card__footer {
-  margin-top: auto;
-}
-
-.project-card__link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9rem;
+  margin: 0;
+  padding: 0.6rem 0.7rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  color: var(--global-link-color) !important;
-  text-decoration: none !important;
-  transition: gap 0.2s ease, color 0.2s ease;
-
-  &:hover {
-    gap: 0.75rem;
-    color: var(--global-link-color-hover) !important;
-  }
+  line-height: 1.3;
+  color: var(--global-text-color);
+  transition: color 0.2s ease;
 }
 
 /* ==========================================================================
@@ -178,65 +119,32 @@ a {
   }
 }
 
-.page__nav-separator {
-  margin: 3rem 0 2rem;
-  border-top: 1px solid var(--global-border-color);
-}
-
-.page__nav {
+.page__nav-arrows {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 3rem;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin: 2rem 0 3rem;
 }
 
-.page__nav-arrow {
+.page__nav-arrow-icon {
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 50%;
+  color: var(--global-text-color-light) !important;
   text-decoration: none !important;
-  transition: color 0.2s ease, transform 0.2s ease;
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 
   i {
-    font-size: 1rem;
-    color: var(--global-text-color-light);
-    transition: transform 0.2s ease;
+    font-size: 0.9rem;
   }
 
   &:hover {
-    .nav-title {
-      color: var(--global-link-color);
-    }
+    border-color: var(--global-link-color);
+    color: var(--global-link-color) !important;
+    transform: translateY(-2px);
   }
-
-  &.prev {
-    &:hover {
-      transform: translateX(-4px);
-
-      i {
-        color: var(--global-link-color);
-      }
-    }
-  }
-
-  &.next {
-    text-align: right;
-
-    &:hover {
-      transform: translateX(4px);
-
-      i {
-        color: var(--global-link-color);
-      }
-    }
-  }
-}
-
-.nav-title {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--global-text-color);
-  transition: color 0.2s ease;
 }

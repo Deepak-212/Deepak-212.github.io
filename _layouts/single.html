@@ -85,24 +85,16 @@ layout: default
       </section>
 
       {% if page.collection == 'portfolio' and (page.previous or page.next) %}
-        <hr class="page__nav-separator">
-        <div class="page__nav">
+        <div class="page__nav-arrows">
           {% if page.previous %}
-            <a href="{{ page.previous.url | prepend: site.baseurl }}" class="page__nav-arrow prev">
+            <a href="{{ page.previous.url | prepend: site.baseurl }}" class="page__nav-arrow-icon" aria-label="Previous project">
               <i class="fa fa-arrow-left" aria-hidden="true"></i>
-              <span class="nav-title">{{ page.previous.title | strip_html | truncate: 35 }}</span>
             </a>
-          {% else %}
-            <span></span>
           {% endif %}
-
           {% if page.next %}
-            <a href="{{ page.next.url | prepend: site.baseurl }}" class="page__nav-arrow next">
-              <span class="nav-title">{{ page.next.title | strip_html | truncate: 35 }}</span>
+            <a href="{{ page.next.url | prepend: site.baseurl }}" class="page__nav-arrow-icon" aria-label="Next project">
               <i class="fa fa-arrow-right" aria-hidden="true"></i>
             </a>
-          {% else %}
-            <span></span>
           {% endif %}
         </div>
       {% endif %}

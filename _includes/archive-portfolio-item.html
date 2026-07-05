@@ -20,28 +20,12 @@
   {% assign title = post.title %}
 {% endif %}
 
-<div class="project-card">
+<a href="{{ base_path }}{{ post.url }}" class="project-card" rel="permalink">
   {% if teaser %}
     <div class="project-card__image">
-      <a href="{{ base_path }}{{ post.url }}" rel="permalink">
-        <img src="{{ teaser_path }}" alt="{{ title | strip_html }}">
-      </a>
+      <img src="{{ teaser_path }}" alt="{{ title | strip_html }}">
     </div>
   {% endif %}
 
-  <div class="project-card__content">
-    <h3 class="project-card__title" itemprop="headline">
-      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
-    </h3>
-    
-    {% if post.excerpt %}
-      <p class="project-card__excerpt" itemprop="description">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-    {% endif %}
-
-    <div class="project-card__footer">
-      <a href="{{ base_path }}{{ post.url }}" class="project-card__link">
-        View Project Details <i class="fa fa-arrow-right" aria-hidden="true"></i>
-      </a>
-    </div>
-  </div>
-</div>
+  <h3 class="project-card__title" itemprop="headline">{{ title }}</h3>
+</a>
