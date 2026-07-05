@@ -4,9 +4,9 @@ collection: portfolio
 category: Research
 excerpt: "Used schlieren imaging to visualize and compare shock structures around Concorde and Su-57 nose geometries."
 header:
-  teaser: /images/schlieren-teaser.jpg
+  teaser: /images/schlieren-teaser.png
 ---
-<img src="/images/schlieren-teaser.jpg" style="width:100%; border-radius:8px; margin-bottom:25px;">
+<img src="/images/schlieren-teaser.png" style="width:100%; border-radius:8px; margin-bottom:25px;">
 
 Schlieren imaging to capture shock wave geometry over Concorde and Su-57 nose models across a range of angles of attack (0°–10°) at 
 Mach 2.2. 
@@ -19,8 +19,8 @@ Taylor-Maccoll conical flow theory for 3D axisymmetric Concorde nose
 
 **Photos**
 <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:20px;">
-  <img src="/images/schlieren-concorde.jpg" style="width:48%; border-radius:6px;" alt="Concorde nose schlieren image">
-  <img src="/images/schlieren-su57.jpg" style="width:48%; border-radius:6px;" alt="Su-57 nose schlieren image">
+  <img src="/images/schlieren-concorde.png" style="width:48%; border-radius:6px;" alt="Concorde nose schlieren image">
+  <img src="/images/schlieren-su57.png" style="width:48%; border-radius:6px;" alt="Su-57 nose schlieren image">
 </div>
 
 **Video**
@@ -31,6 +31,3 @@ Taylor-Maccoll conical flow theory for 3D axisymmetric Concorde nose
 **Report & Slides**
 <a href="/files/Schlieren_Report.pdf" class="btn" target="_blank" rel="noopener">Download Report</a>
 <a href="/files/Schlieren_Presentation.pptx" class="btn" target="_blank" rel="noopener">Download Slides</a>
-
-**Tools**
-Schlieren Imaging • (add any software/hardware used, e.g. wind tunnel, camera, optics)
