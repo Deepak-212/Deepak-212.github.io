@@ -19,9 +19,9 @@ author_profile: true
 **Robotic Research Centre, IIIT Hyderabad**  
 **Dec 2025 – Feb 2026**
 
-- Developed a nonlinear 6-DOF UAV simulator.
-- Built a Gymnasium environment for reinforcement learning.
-- Trained PPO controllers with safety filtering.
+- Developd a gym based environmenet for RL based control of fixed wing UAV
+- Trained a PPO agent to hold/climb to the desired altitude under wind gusts
+- Implemented a safety filter with stall avoidance constraints using control    barrier functions within the control framework
 
 ---
 
@@ -29,5 +29,4 @@ author_profile: true
 **CSIR–National Aerospace Laboratories (NAL)**  
 **June 2025 – July 2025**
 
-- Developed a nonlinear 6-DOF airship model.
-- Designed and evaluated an LQR controller in MATLAB/Simulink.
+- Developed a nonlinear 6-DOF flight dynamics model of a high altitude airship in MATLAB/Simulink.
