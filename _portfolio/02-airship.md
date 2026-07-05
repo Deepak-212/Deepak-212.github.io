@@ -1,6 +1,7 @@
 ---
 title: "Mathematical modelling of HAA"
 collection: portfolio
+category: Research
 excerpt: "Developed a 6DOF nonlinear airship model."
 header:
   teaser: /images/airship.png

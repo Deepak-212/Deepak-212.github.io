@@ -27,5 +27,10 @@
     </div>
   {% endif %}
 
-  <h3 class="project-card__title" itemprop="headline">{{ title }}</h3>
+  <div class="project-card__overlay">
+    <h3 class="project-card__title" itemprop="headline">{{ title }}</h3>
+    {% if post.excerpt %}
+      <p class="project-card__excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 90 }}</p>
+    {% endif %}
+  </div>
 </a>

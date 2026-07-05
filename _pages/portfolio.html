@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Portfolio"
+title: "Projects"
 permalink: /portfolio/
 author_profile: true
 hide_title: true
@@ -8,9 +8,15 @@ hide_title: true
 
 {% include base_path %}
 
-<div class="portfolio-grid">
-  {% for post in site.portfolio %}
-    {% include archive-portfolio-item.html %}
-  {% endfor %}
-</div>
+{% assign grouped_projects = site.portfolio | group_by: "category" %}
 
+{% for group in grouped_projects %}
+  <section class="portfolio-section">
+    <h2 class="portfolio-section__title">{{ group.name | default: "Projects" }}</h2>
+    <div class="portfolio-grid">
+      {% for post in group.items %}
+        {% include archive-portfolio-item.html %}
+      {% endfor %}
+    </div>
+  </section>
+{% endfor %}

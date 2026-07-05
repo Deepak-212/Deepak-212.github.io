@@ -1,6 +1,7 @@
 ---
 title: "Safe Reinforcement Learning for Fixed-Wing UAV Control"
 collection: portfolio
+category: Research
 excerpt: "Developed a safe RL controller for altitude tracking of a 6-DOF fixed-wing UAV."
 header:
   teaser: /images/uav-rl.png
