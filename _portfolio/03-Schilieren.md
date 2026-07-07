@@ -6,7 +6,7 @@ excerpt: "Used schlieren imaging to visualize and compare shock structures aroun
 header:
   teaser: /images/schlieren-teaser.png
 ---
-<img src="/images/schlieren-su57.gif" style="width:100%; border-radius:8px; margin-bottom:25px;">
+<img src="/images/Su57.gif" style="width:100%; border-radius:8px; margin-bottom:25px;">
 
 Schlieren imaging to capture shock wave geometry over Concorde and Su-57 nose models across a range of angles of attack (0°–10°) at 
 Mach 2.2. 
