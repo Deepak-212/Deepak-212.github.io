@@ -4,7 +4,7 @@ collection: portfolio
 category: Research
 excerpt: "Used schlieren imaging to visualize and compare shock structures around Concorde and Su-57 nose geometries."
 header:
-  teaser: /images/schlieren-teaser.png
+  teaser: /images/Su57gif.gif
 ---
 <img src="/images/Su57gif.gif" style="width:100%; border-radius:8px; margin-bottom:25px;">
 
