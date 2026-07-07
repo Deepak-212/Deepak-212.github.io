@@ -23,7 +23,7 @@ repository               : "Deepak-212/Deepak-212.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "p1.jpeg"
+  avatar           : "p1_cropped.jpeg"
   name             : "Deepak G"
   pronouns         : # example: "she/her"  
   bio              : "Safe Autonomy, Aerospace, and Robotics Researcher"

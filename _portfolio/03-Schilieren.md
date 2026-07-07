@@ -30,4 +30,4 @@ Taylor-Maccoll conical flow theory for 3D axisymmetric Concorde nose
 
 **Report & Slides**
 <a href="/files/Schlieren_Report_11zon.pdf" class="btn" target="_blank" rel="noopener">Download Report</a>
-<a href="/files/Schlieren_Presentation.pptx" class="btn" target="_blank" rel="noopener">Download Slides</a>
+<a href="/files/Schlieren_Presentation.pdf" class="btn" target="_blank" rel="noopener">Download Slides</a>
