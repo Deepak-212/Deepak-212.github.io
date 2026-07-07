@@ -4,7 +4,7 @@ collection: portfolio
 category: Research
 excerpt: "Schlieren imaging of scaled Concorde and Su-57 nose models at Mach 2.2, compared against oblique-shock and Taylor-Maccoll theory."
 header:
-  teaser: /images/Su7gif.gif
+  teaser: /images/Su57gif.gif
 ---
 <img src="/images/Su57gif.gif" style="width:100%; border-radius:8px; margin-bottom:25px;">
 
@@ -16,16 +16,16 @@ We visualized supersonic shock structures over scaled nose models of the Concord
 ## Model Manufacturing
 - Started from existing CAD/graphics files for both aircraft, isolated the nose sections, and lofted clean solid models scaled to fit the wind tunnel's 100 mm × 50 mm test section (Concorde: 85 mm tall, 25 mm max diameter; Su-57: 42.5 mm tall, 30 mm max diameter)
 
-<img src="/images/schlieren-cad.jpg" style="width:100%; border-radius:6px; margin: 12px 0;" alt="Concorde and Su-57 CAD nose models">
+<img src="/images/schlieren-cad.jpg" style="width:70%; border-radius:6px; margin: 12px 0;" alt="Concorde and Su-57 CAD nose models">
 
 - Machined both noses from mild steel to survive the tunnel's pressure loads: lathe-turned and drilled for a support-rod mount, then CNC-shaped (rough cut + smoothing pass) at the Central Workshop (SWISS Lab)
 
-<img src="/images/schlieren-cnc.jpg" style="width:100%; border-radius:6px; margin: 12px 0;" alt="Concorde and Su-57 nose sections mounted in the CNC chuck">
+<img src="/images/schlieren-cnc.jpg" style="width:70%; border-radius:6px; margin: 12px 0;" alt="Concorde and Su-57 nose sections mounted in the CNC chuck">
 
 - Used EDM (electrical discharge machining) to cleanly separate the finished nose from the CNC holding stock without inducing any mechanical stress or deformation
 - Brass-welded a support rod to each model — brass's low melting point kept heat distortion minimal, preserving the sharp tip that's critical for getting an attached (rather than bow) shock
 
-<img src="/images/schlieren-final-models.jpg" style="width:100%; max-width:400px; display:block; margin: 12px auto; border-radius:6px;" alt="Finished Concorde and Su-57 nose specimens with support rods">
+<img src="/images/schlieren-final-models.jpg" style="width:60%; max-width:400px; display:block; margin: 12px auto; border-radius:6px;" alt="Finished Concorde and Su-57 nose specimens with support rods">
 
 
 ## Schlieren Setup 
@@ -41,8 +41,8 @@ We visualized supersonic shock structures over scaled nose models of the Concord
 
 **Photos**
 <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:20px;">
-  <img src="/images/schlieren-concorde.jpg" style="width:48%; border-radius:6px;" alt="Concorde nose schlieren image">
-  <img src="/images/schlieren-su57.gif" style="width:48%; border-radius:6px;" alt="Su-57 nose schlieren shock wave, animated">
+  <img src="/images/schlieren-concorde.png" style="width:48%; border-radius:6px;" alt="Concorde nose schlieren image">
+  <img src="/images/schlieren-su57.png" style="width:48%; border-radius:6px;" alt="Su-57 nose schlieren shock wave, animated">
 </div>
 
 **Video**
