@@ -21,6 +21,23 @@
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
           </li>
+          {% if page.collection == 'portfolio' %}
+            <li class="masthead__menu-item masthead__project-nav persist tail">
+              <a href="{{ '/portfolio/' | prepend: site.baseurl }}" class="masthead__back-link">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i> Back to Projects
+              </a>
+              {% if page.previous or page.next %}
+                <span class="masthead__project-arrows">
+                  {% if page.previous %}
+                    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="masthead__project-arrow" aria-label="Previous project"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+                  {% endif %}
+                  {% if page.next %}
+                    <a href="{{ page.next.url | prepend: site.baseurl }}" class="masthead__project-arrow" aria-label="Next project"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                  {% endif %}
+                </span>
+              {% endif %}
+            </li>
+          {% endif %}
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>

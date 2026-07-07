@@ -120,64 +120,72 @@ a {
 }
 
 /* ==========================================================================
-   PAGE NAVIGATION & PAGINATION MODERNIZATION
+   PROJECT NAV (lives in the top masthead bar now)
    ========================================================================== */
-.page__top-nav {
-  margin-bottom: 1.5rem;
+.masthead__project-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
 }
 
-.back-link {
+.masthead__back-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--global-text-color-light) !important;
+  color: inherit;
   text-decoration: none !important;
-  transition: color 0.2s ease, transform 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    opacity: 0.75;
+
+    i {
+      transform: translateX(-3px);
+    }
+  }
 
   i {
     transition: transform 0.2s ease;
   }
-
-  &:hover {
-    color: var(--global-link-color) !important;
-    
-    i {
-      transform: translateX(-4px);
-    }
-  }
 }
 
-.page__nav-arrows {
-  display: flex;
-  justify-content: flex-end;
-  gap: 0.75rem;
-  margin: 2rem 0 3rem;
+.masthead__project-arrows {
+  display: inline-flex;
+  gap: 0.5rem;
 }
 
-.page__nav-arrow-icon {
+.masthead__project-arrow {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.25rem;
-  height: 2.25rem;
-  border: 1px solid var(--global-border-color);
+  width: 1.9rem;
+  height: 1.9rem;
+  border: 1px solid currentColor;
+  opacity: 0.6;
   border-radius: 50%;
-  color: var(--global-text-color-light) !important;
+  color: inherit;
   text-decoration: none !important;
-  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 
   i {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
   }
 
   &:hover {
-    border-color: var(--global-link-color);
-    color: var(--global-link-color) !important;
-    transform: translateY(-2px);
+    opacity: 1;
+    transform: translateY(-1px);
   }
 }
+
+/* Project title: smaller, lighter weight, only on portfolio project pages */
+.page__title--project {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
 
 /* ==========================================================================
    CV LANDING PAGE
