@@ -119,66 +119,6 @@ a {
   color: rgba(255, 255, 255, 0.85);
 }
 
-/* ==========================================================================
-   PROJECT NAV (lives in the top masthead bar now)
-   ========================================================================== */
-.masthead__project-nav {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-}
-
-.masthead__back-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: inherit;
-  text-decoration: none !important;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-
-  &:hover {
-    opacity: 0.75;
-
-    i {
-      transform: translateX(-3px);
-    }
-  }
-
-  i {
-    transition: transform 0.2s ease;
-  }
-}
-
-.masthead__project-arrows {
-  display: inline-flex;
-  gap: 0.5rem;
-}
-
-.masthead__project-arrow {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 1.9rem;
-  height: 1.9rem;
-  border: 1px solid currentColor;
-  opacity: 0.6;
-  border-radius: 50%;
-  color: inherit;
-  text-decoration: none !important;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-
-  i {
-    font-size: 0.75rem;
-  }
-
-  &:hover {
-    opacity: 1;
-    transform: translateY(-1px);
-  }
-}
-
 /* Project title: smaller, lighter weight, only on portfolio project pages */
 .page__title--project {
   font-size: 1.5rem;
