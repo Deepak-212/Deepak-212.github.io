@@ -9,9 +9,9 @@ author_profile: true
 **California Institute of Technology (Caltech)**  
 **June 2026 – Present**
 
-- Researching safe control algorithms for spacecraft proximity operations.
-- Developing and validating safe MPC and Control Barrier Function based controllers.
-- Working with ROS 2, PX4, and the ATMOS robotics testbed.
+- Researching safe control algorithms for spacecraft proximity operations
+- Developing and validating safe MPC and Control Barrier Function based controllers
+- Working with ROS 2, PX4, and the ATMOS robotics testbed
 
 ---
 
@@ -19,9 +19,9 @@ author_profile: true
 **Robotic Research Centre, IIIT Hyderabad**  
 **Dec 2025 – Feb 2026**
 
-- Developd a gym based environmenet for RL based control of fixed wing UAV
+- Developed a Gymnasium-based environment for RL-based control of fixed-wing UAV
 - Trained a PPO agent to hold/climb to the desired altitude under wind gusts
-- Implemented a safety filter with stall avoidance constraints using control    barrier functions within the control framework
+- Implemented a safety filter with stall avoidance constraints using control barrier functions within the control framework
 
 ---
 

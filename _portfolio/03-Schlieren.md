@@ -51,6 +51,5 @@ We visualized supersonic shock structures over scaled nose models of the Concord
 </div>
 
 **Report & Slides**
-<a href="/files/Schlieren_Report.pdf" class="btn" target="_blank" rel="noopener">Download Report</a>
-<a href="/files/Schlieren_Presentation.pptx" class="btn" target="_blank" rel="noopener">Download Slides</a>
-
+<a href="/files/Schlieren_Report_11zon.pdf" class="btn" target="_blank" rel="noopener">View Report</a>
+<a href="/files/Schlieren_Presentation.pdf" class="btn" target="_blank" rel="noopener">View Slides</a>
