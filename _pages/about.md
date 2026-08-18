@@ -15,4 +15,3 @@ I am currently a **Summer Undergraduate Research Fellow at Caltech**, where I wo
 
 Previously, I worked on reinforcement learning for fixed-wing UAV control at IIIT Hyderabad and nonlinear flight control of airships at CSIR-NAL.
 
-Feel free to explore my **research**, **projects**, **CV**, and **publications** using the navigation bar above.
