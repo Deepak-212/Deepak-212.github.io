@@ -8,7 +8,7 @@ header:
 ---
 <img src="/images/Su57gif.gif" style="width:100%; border-radius:8px; margin-bottom:25px;">
 
-**Aerodynamics Lab Project, IIT Kharagpur** — with my teammates Sai Palani Kumar G S, Viswasarathi N M, and Dinesh Bavan M P, under Prof. Sandeep Saha.
+
 
 ## Overview
 We visualized supersonic shock structures over scaled nose models of the Concorde and the Su-57 at Mach 2.2 using schlieren imaging, then checked the measured shock angles against two levels of theory: 2D oblique-shock relations and the Taylor-Maccoll conical-flow equation. The two aircraft sit at opposite ends of supersonic design philosophy — a slender, axisymmetric cruiser versus a chined, faceted stealth fighter — so the comparison is really a study in how geometry alone reshapes the shock.

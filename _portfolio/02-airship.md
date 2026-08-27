@@ -14,6 +14,3 @@ Developed a nonlinear six-degree-of-freedom mathematical model of a high altitud
 **Key Contributions**
 - Developed a nonlinear 6-DOF airship model
 - Studied the open loop response and different stability modes
-
-**Tools**
-MATLAB • Simulink • Control Systems

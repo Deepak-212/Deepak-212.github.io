@@ -18,5 +18,3 @@ Designed and implemented a nonlinear 6-DOF fixed-wing aircraft simulator based o
 - Integrated Control Barrier Functions for safe control.
 - Evaluated controller performance under different flight conditions.
 
-**Tools**
-Python • PyTorch • Gymnasium • Stable Baselines3 • NumPy
