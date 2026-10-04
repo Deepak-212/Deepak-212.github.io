@@ -1,0 +1,31 @@
+# Cards shown under "Selected Research" on the homepage, in this order.
+#   image:   path to an image/GIF (or a full https:// URL). .mp4/.webm videos also work.
+#   url:     where the title and image link to (a project page, paper, etc.). Optional.
+#   links:   small [label] links under the description. Optional.
+#
+# ---- Template for your SURF project: uncomment, fill in, and move it to the top ----
+# - title: "Your SURF project title"
+#   venue: "SURF @ Caltech · AMBER Lab"
+#   image: /images/research/surf.gif
+#   url: /portfolio/05-surf/
+#   description: "Two or three sentences on the problem, your approach, and the result."
+#   links:
+#     - label: paper
+#       url: https://arxiv.org/abs/...
+#     - label: video
+#       url: https://youtube.com/...
+
+- title: "Safe Reinforcement Learning for Fixed-Wing UAV Control"
+  venue: "Research Intern · Robotic Research Centre, IIIT Hyderabad"
+  image: /images/uav-rl.png
+  url: /portfolio/01-uav-rl/
+  description: "A 6-DOF fixed-wing simulator and Gymnasium environment for training a PPO altitude-tracking controller, with a control barrier function safety filter that enforces stall-avoidance constraints."
+
+- title: "UAV Path Planning in Dynamic 3D Environments"
+  venue: "Team project"
+  image: https://github.com/Deepak-212/UAV-Path-Planning/raw/main/simulation/multi_uav_simulation_dynamic_obstacles.gif
+  url: /portfolio/04-uav-path-planning/
+  description: "Extending A* from 3D space to 4D space-time so UAVs can reason about when airspace is occupied: waiting out moving obstacles and deconflicting multiple vehicles."
+  links:
+    - label: code
+      url: https://github.com/Deepak-212/UAV-Path-Planning

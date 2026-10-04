@@ -1,0 +1,35 @@
+# Shown on /experience/, newest first.
+#   logo: drop the file at this path. If the file doesn't exist yet, a grey box with the
+#         org's initials is shown instead, so nothing breaks while you collect logos.
+#   description: a paragraph (Markdown). bullets: optional list. Use either or both.
+
+- role: "Summer Undergraduate Research Fellow"
+  org: "California Institute of Technology (Caltech)"
+  initials: "Caltech"
+  url: https://www.caltech.edu/
+  logo: /images/logos/caltech.jpg
+  dates: "Jun '26 – Present"
+  bullets:
+    - "Researching safe control algorithms for spacecraft proximity operations"
+    - "Developing and validating safe MPC and Control Barrier Function based controllers"
+    - "Working with ROS 2, PX4, and the ATMOS robotics testbed"
+
+- role: "Research Intern"
+  org: "Robotic Research Centre, IIIT Hyderabad"
+  initials: "IIIT"
+  url: https://robotics.iiit.ac.in/
+  logo: /images/logos/iiith.png
+  dates: "Dec '25 – Feb '26"
+  bullets:
+    - "Developed a Gymnasium-based environment for RL-based control of fixed-wing UAV"
+    - "Trained a PPO agent to hold/climb to the desired altitude under wind gusts"
+    - "Implemented a safety filter with stall avoidance constraints using control barrier functions within the control framework"
+
+- role: "Research Intern"
+  org: "CSIR–National Aerospace Laboratories (NAL)"
+  initials: "NAL"
+  url: https://www.nal.res.in/
+  logo: /images/logos/nal.png
+  dates: "Jun '25 – Jul '25"
+  bullets:
+    - "Developed a nonlinear 6-DOF flight dynamics model of a high altitude airship in MATLAB/Simulink."

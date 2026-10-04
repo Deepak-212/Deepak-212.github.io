@@ -1,0 +1,6 @@
+{%- comment -%} News list. Data: _data/news.yml {%- endcomment -%}
+<div class="news">
+{%- for item in site.data.news -%}
+<div class="news__item"><span class="news__date">{{ item.date }}</span><span class="news__text">{{ item.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span></div>
+{%- endfor -%}
+</div>

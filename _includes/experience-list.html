@@ -1,0 +1,16 @@
+{%- comment -%} Experience rows (Jon Barron style). Data: _data/experience.yml {%- endcomment -%}
+{%- include base_path -%}
+<div class="xrow-list">
+{%- for job in site.data.experience -%}
+{%- assign logo_file = site.static_files | where: "path", job.logo | first -%}
+<div class="xrow">
+<div class="xrow__media xrow__media--logo">{% if job.url %}<a href="{{ job.url }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">{% endif %}{% if logo_file %}<img src="{{ base_path }}{{ job.logo }}" alt="{{ job.org }} logo" loading="lazy">{% else %}<span class="xrow__initials">{{ job.initials }}</span>{% endif %}{% if job.url %}</a>{% endif %}</div>
+<div class="xrow__body">
+<div class="xrow__title">{{ job.role }} <span class="xrow__bar">|</span> {% if job.url %}<a href="{{ job.url }}" target="_blank" rel="noopener">{{ job.org }}</a>{% else %}{{ job.org }}{% endif %}</div>
+<div class="xrow__meta">{{ job.dates }}</div>
+{%- if job.description -%}<div class="xrow__desc">{{ job.description | markdownify }}</div>{%- endif -%}
+{%- if job.bullets -%}<ul class="xrow__bullets">{% for b in job.bullets %}<li>{{ b | markdownify | remove: "<p>" | remove: "</p>" | strip }}</li>{% endfor %}</ul>{%- endif -%}
+</div>
+</div>
+{%- endfor -%}
+</div>

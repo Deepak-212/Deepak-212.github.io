@@ -155,3 +155,152 @@ a {
   font-size: 0.9rem;
   color: var(--global-text-color-light);
 }
+
+/* ==========================================================================
+   NEWS (homepage) — date column + text, scrolls once the list gets long
+   ========================================================================== */
+.news {
+  max-height: 18rem;
+  overflow-y: auto;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.news__item {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  gap: 1rem;
+  padding: 0.4rem 0;
+
+  & + & { border-top: 1px solid var(--global-border-color); }
+}
+
+.news__date {
+  font-weight: 700;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+.news__text a { text-decoration: underline; }
+
+@media (max-width: 600px) {
+  .news { max-height: none; overflow: visible; }
+}
+
+/* ==========================================================================
+   IMAGE/LOGO + TEXT ROWS (Jon Barron style)
+   Used by Experience (logos) and Selected Research (thumbnails)
+   ========================================================================== */
+.xrow-list { margin-top: 0.5rem; }
+
+.xrow {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.1rem 0;
+
+  & + & { border-top: 1px solid var(--global-border-color); }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}
+
+.xrow__media {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a, a:hover, a:focus { display: block; width: 100%; height: 100%; text-decoration: none; }
+
+  img, video {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* logos: contained, never cropped */
+.xrow__media--logo {
+  width: 110px;
+  height: 110px;
+
+  img { object-fit: contain; }
+}
+
+/* research thumbnails: cropped to fill */
+.xrow__media--wide {
+  width: 200px;
+  aspect-ratio: 4 / 3;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--global-border-color);
+
+  img, video { object-fit: cover; }
+
+  @media (max-width: 600px) { width: 100%; }
+}
+
+.xrow__initials {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: var(--global-border-color);
+  color: var(--global-text-color-light);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.xrow__body {
+  flex: 1;
+  min-width: 0;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.xrow__title {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+
+  a { text-decoration: none; }
+  a:hover { text-decoration: underline; }
+}
+
+.xrow__bar {
+  font-weight: 400;
+  color: var(--global-text-color-light);
+  margin: 0 0.2rem;
+}
+
+.xrow__meta {
+  margin-top: 0.15rem;
+  font-style: italic;
+  color: var(--global-text-color-light);
+}
+
+.xrow__desc {
+  margin-top: 0.45rem;
+
+  p { margin: 0; font-size: inherit; }
+  p + p { margin-top: 0.5rem; }
+}
+
+.xrow__bullets {
+  margin: 0.45rem 0 0;
+  padding-left: 1.1rem;
+
+  li { margin: 0.15rem 0; font-size: inherit; }
+}
+
+.xrow__links {
+  margin-top: 0.4rem;
+
+  a { text-decoration: underline; }
+}

@@ -1,0 +1,18 @@
+{%- comment -%} Selected research rows. Data: _data/selected_research.yml {%- endcomment -%}
+{%- include base_path -%}
+<div class="xrow-list">
+{%- for item in site.data.selected_research -%}
+{%- if item.image contains "://" -%}{%- assign img = item.image -%}{%- else -%}{%- assign img = item.image | prepend: base_path -%}{%- endif -%}
+{%- if item.url contains "://" -%}{%- assign href = item.url -%}{%- elsif item.url -%}{%- assign href = item.url | prepend: base_path -%}{%- else -%}{%- assign href = nil -%}{%- endif -%}
+{%- assign ext = item.image | split: "." | last | downcase -%}
+<div class="xrow">
+<div class="xrow__media xrow__media--wide">{% if href %}<a href="{{ href }}" tabindex="-1" aria-hidden="true">{% endif %}{% if ext == "mp4" or ext == "webm" %}<video src="{{ img }}" autoplay loop muted playsinline></video>{% else %}<img src="{{ img }}" alt="" loading="lazy">{% endif %}{% if href %}</a>{% endif %}</div>
+<div class="xrow__body">
+<div class="xrow__title">{% if href %}<a href="{{ href }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</div>
+{%- if item.venue -%}<div class="xrow__meta">{{ item.venue }}</div>{%- endif -%}
+{%- if item.description -%}<div class="xrow__desc">{{ item.description | markdownify }}</div>{%- endif -%}
+{%- if item.links -%}<div class="xrow__links">{% for l in item.links %}{% unless forloop.first %} / {% endunless %}<a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a>{% endfor %}</div>{%- endif -%}
+</div>
+</div>
+{%- endfor -%}
+</div>
