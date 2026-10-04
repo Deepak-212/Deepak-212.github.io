@@ -19,7 +19,7 @@
   venue: "Advised by Prof. Ashish Hota, Dept. of Electrical Engineering, IIT Kharagpur"
   image: /images/cbf-pursuit-evasion/pursuit_bep.gif
   url: /portfolio/05-cbf-pursuit-evasion/
-  description: "A volume-based control barrier function safety filter for pursuit-evasion game in $\\mathbb{R}^3$"
+  description: "A volume-based control barrier function safety filter for pursuit-evasion game in $\mathbb{R}^3$"
 # - title: "Safe Reinforcement Learning for Fixed-Wing UAV Control"
 #   venue: "Research Intern · Robotic Research Centre, IIIT Hyderabad"
 #   image: /images/uav-rl.png
