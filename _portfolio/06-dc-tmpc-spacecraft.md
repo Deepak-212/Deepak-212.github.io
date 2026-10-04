@@ -38,11 +38,11 @@ Before closing the loop with MPC, the safety layer was tested on its own. A nomi
 
 <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:1.25rem; margin:1.75rem 0;">
 <figure class="project__figure" style="margin:0;">
-  <img src="/images/dc-tmpc-atmos/cbfatmos_vid.mp4" alt="CBF safety filter keeping the ATMOS free-flyer on the table">
+  <img src="/images/dc-tmpc-atmos/cbfatmos.gif" alt="CBF safety filter keeping the ATMOS free-flyer on the table">
   <figcaption>Standalone CBF filter: the nominal command pushes outward, the filter keeps the robot on the table.</figcaption>
 </figure>
 <figure class="project__figure" style="margin:0;">
-  <img src="/images/dc-tmpc-atmos/cbfatmos_result.png" alt="Results of the standalone CBF filter experiment">
+  <img src="/images/dc-tmpc-atmos/result.png" alt="Results of the standalone CBF filter experiment">
   <figcaption>Results from the standalone CBF experiment.</figcaption>
 </figure>
 </div>
