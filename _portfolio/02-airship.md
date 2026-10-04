@@ -1,5 +1,5 @@
 ---
-title: "Nonlinear Modelling of a High-Altitude Airship"
+title: "Mathematical Modelling of a High-Altitude Airship"
 collection: portfolio
 category: Research
 description: "A nonlinear six-degree-of-freedom flight dynamics model of a high-altitude airship in MATLAB/Simulink."
