@@ -155,3 +155,241 @@ a {
   font-size: 0.9rem;
   color: var(--global-text-color-light);
 }
+
+/* ==========================================================================
+   MINIMAL MASTHEAD (shreey.am style): plain white bar, links top-right
+   ========================================================================== */
+.masthead {
+  background: var(--global-bg-color);
+
+  &::after { display: none; }   /* drop the grey rule under the old nav */
+}
+
+.masthead__nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  font-size: 0.875rem;
+}
+
+.masthead__link {
+  color: var(--global-masthead-link-color);
+  text-decoration: none;
+  text-underline-offset: 3px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: var(--global-masthead-link-color);
+    text-decoration: underline;
+  }
+
+  &.is-current { text-decoration: underline; }
+}
+
+.masthead__toggle {
+  font-size: 0.8rem;
+  color: var(--global-text-color-light);
+
+  &:hover { text-decoration: none; }
+}
+
+@media (max-width: 600px) {
+  .masthead__nav { gap: 1.25rem; padding: 0.85rem 1rem; }
+}
+
+/* ==========================================================================
+   FOOTER: white, thin top rule, centred
+   ========================================================================== */
+.page__footer {
+  background-color: var(--global-bg-color);
+  border-top: 1px solid var(--global-border-color);
+
+  footer {
+    max-width: 1280px;
+    text-align: center;
+  }
+}
+
+.page__footer-copyright {
+  font-size: 0.8rem;
+  color: var(--global-text-color-light);
+}
+
+/* ==========================================================================
+   HOMEPAGE (layout: home)
+   ========================================================================== */
+.home {
+  display: block;
+  padding: 0 1rem;
+}
+
+.home__article {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.5rem 0 3rem;
+  color: var(--global-text-color);
+
+  > * + * { margin-top: 3rem; }
+
+  a { text-underline-offset: 2px; }
+  a:hover { color: inherit; text-decoration: underline; }
+}
+
+/* --- header ------------------------------------------------------------- */
+.home__header {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+}
+
+.home__avatar {
+  width: 9rem;
+  height: 9rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--global-border-color);
+
+  @media (max-width: 600px) { width: 8rem; height: 8rem; }
+}
+
+.home__id {
+  min-width: 0;
+
+  > * { margin: 0; }
+  > * + * { margin-top: 0.6rem; }
+}
+
+.home__name {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.home__tagline {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.home__meta {
+  font-size: 0.875rem;
+  color: var(--global-text-color-light);
+}
+
+.home__links { font-size: 0.875rem; }
+
+.home__sep { color: var(--global-text-color-light); }
+
+/* --- intro --------------------------------------------------------------- */
+.home__intro {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+
+  p { margin: 0; }
+  p + p { margin-top: 1rem; }
+}
+
+/* --- section headings ---------------------------------------------------- */
+.home__h2 {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.home__more {
+  margin: 1.5rem 0 0;
+  font-size: 0.875rem;
+}
+
+/* --- news (siddancha.github.io style) ----------------------------------- */
+.news {
+  max-height: 17rem;          /* scrolls once the list gets long */
+  overflow-y: auto;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.news__item {
+  display: grid;
+  grid-template-columns: 4.75rem 1fr;
+  gap: 1rem;
+  padding: 0.45rem 0;
+
+  & + & { border-top: 1px solid var(--global-border-color); }
+}
+
+@media (max-width: 600px) {
+  .news { max-height: none; overflow: visible; }   /* no nested scrolling on phones */
+  .news__item { grid-template-columns: 4rem 1fr; gap: 0.75rem; }
+}
+
+.news__date {
+  font-weight: 700;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+.news__text a { text-decoration: underline; }
+
+/* --- selected research cards (shreey.am style) -------------------------- */
+.research > * + * { margin-top: 1rem; }
+
+.research__card {
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+  gap: 1.1rem;
+  padding: 1rem;
+  border: 1px solid var(--global-border-color);
+
+  @media (max-width: 600px) { grid-template-columns: 1fr; }
+}
+
+.research__media {
+  display: block;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--global-bg-color);
+
+  img, video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.research__body { min-width: 0; }
+
+.research__title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.35;
+
+  a { color: inherit; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+}
+
+.research__desc {
+  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--global-text-color);
+  opacity: 0.85;
+}
+
+.research__links {
+  margin: 0.6rem 0 0;
+  font-size: 0.875rem;
+}

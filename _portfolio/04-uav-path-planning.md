@@ -5,6 +5,12 @@ category: Research
 excerpt: "Built a Space-Time A* planner that routes UAVs through 3D airspace with both static and moving obstacles."
 header:
   teaser: https://github.com/Deepak-212/UAV-Path-Planning/raw/main/simulation/multi_uav_simulation_dynamic_obstacles.gif
+selected: true
+selected_order: 2
+summary: "Extending A* from 3D space to 4D space-time so UAVs can reason about when airspace is occupied: waiting out moving obstacles, deconflicting multiple vehicles, and penalizing energy-expensive climbs."
+links:
+  - label: code
+    url: https://github.com/Deepak-212/UAV-Path-Planning
 ---
 <img src="https://github.com/Deepak-212/UAV-Path-Planning/raw/main/simulation/multi_uav_simulation_dynamic_obstacles.gif" style="width:100%; border-radius:8px; margin-bottom:25px;">
 

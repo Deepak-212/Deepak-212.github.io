@@ -5,6 +5,14 @@ category: Research
 excerpt: "Schlieren imaging of scaled Concorde and Su-57 nose models at Mach 2.2, compared against oblique-shock and Taylor-Maccoll theory."
 header:
   teaser: /images/Su57gif.gif
+selected: true
+selected_order: 3
+summary: "Schlieren imaging of machined Concorde and Su-57 nose models at Mach 2.2. The measured Concorde shock angle matches Taylor-Maccoll theory to within a fraction of a degree, directly showing the 3D relieving effect."
+links:
+  - label: report
+    url: /files/Schlieren_Report_11zon.pdf
+  - label: slides
+    url: /files/Schlieren_Presentation.pdf
 ---
 <img src="/images/Su57gif.gif" style="width:100%; border-radius:8px; margin-bottom:25px;">
 

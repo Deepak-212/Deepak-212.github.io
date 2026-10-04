@@ -1,0 +1,11 @@
+# Newest first. `text` supports Markdown (links, **bold**, emoji).
+# Format dates like the examples: "Jun '26".
+
+- date: "Jun '26"
+  text: "Started as a **Summer Undergraduate Research Fellow at Caltech** in the AMBER Lab, working with Prof. Aaron Ames and Dr. Yana Lishkova on safe control for autonomous spacecraft."
+
+- date: "Dec '25"
+  text: "Joined the **Robotic Research Centre, IIIT Hyderabad** as a research intern, working on safe reinforcement learning for fixed-wing UAV control."
+
+- date: "Jun '25"
+  text: "Joined **CSIR–National Aerospace Laboratories** as a research intern, building a nonlinear 6-DOF flight dynamics model of a high-altitude airship."

@@ -5,6 +5,9 @@ category: Research
 excerpt: "Developed a safe RL controller for altitude tracking of a 6-DOF fixed-wing UAV."
 header:
   teaser: /images/uav-rl.png
+selected: true
+selected_order: 1
+summary: "A 6-DOF fixed-wing simulator and Gymnasium environment for training a PPO altitude-tracking controller, with a control barrier function safety filter that enforces stall-avoidance constraints during learning and deployment."
 ---
 <img src="/images/uav-rl.png" style="width:100%; border-radius:8px; margin-bottom:25px;">
 Research Intern • Robotic Research Centre, IIIT Hyderabad
