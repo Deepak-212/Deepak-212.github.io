@@ -1,7 +1,8 @@
 ---
 title: "Schlieren Imaging & Supersonic Aerodynamic Analysis"
 collection: portfolio
-category: Research
+category: Research Projects
+order: 4
 description: "Schlieren imaging of scaled Concorde and Su-57 nose sections at Mach 2.2, compared against oblique-shock and Taylor-Maccoll theory."
 advisor: "Supervisor: Prof. Sandeep Saha, Dept. of Aerospace Engineering, IIT Kharagpur"
 excerpt: "Schlieren imaging of scaled Concorde and Su-57 nose models at Mach 2.2, compared against oblique-shock and Taylor-Maccoll theory."

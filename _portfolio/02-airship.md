@@ -1,7 +1,8 @@
 ---
 title: "Mathematical Modelling of a High-Altitude Airship"
 collection: portfolio
-category: Research
+category: Research Internship
+order: 2
 description: "A nonlinear six-degree-of-freedom flight dynamics model of a high-altitude airship in MATLAB/Simulink."
 role: "Research Intern, CSIR–National Aerospace Laboratories (NAL), Flight Mechanics and Control Division"
 advisor: "Advised by Dr. Guruganesh R, Sr. Principal Scientist"

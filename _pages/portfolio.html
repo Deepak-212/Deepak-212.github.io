@@ -8,15 +8,39 @@ hide_title: true
 
 {% include base_path %}
 
+{%- comment -%}
+  Sections appear in this order. A project goes into a section through its
+  `category:` front matter, and `order:` sets its position within the section
+  (1 = first). Any category not listed here is shown afterwards.
+{%- endcomment -%}
+{% assign section_order = "Research Internship|Research Projects" | split: "|" %}
 {% assign grouped_projects = site.portfolio | group_by: "category" %}
 
-{% for group in grouped_projects %}
+{% for section_name in section_order %}
+  {% assign group = grouped_projects | where: "name", section_name | first %}
+  {% if group %}
   <section class="portfolio-section">
-    <h2 class="portfolio-section__title">{{ group.name | default: "Projects" }}</h2>
+    <h2 class="portfolio-section__title">{{ section_name }}</h2>
     <div class="portfolio-grid">
-      {% for post in group.items %}
+      {% assign items = group.items | sort: "order", "last" %}
+      {% for post in items %}
         {% include archive-portfolio-item.html %}
       {% endfor %}
     </div>
   </section>
+  {% endif %}
+{% endfor %}
+
+{% for group in grouped_projects %}
+  {% unless section_order contains group.name %}
+  <section class="portfolio-section">
+    <h2 class="portfolio-section__title">{{ group.name | default: "Projects" }}</h2>
+    <div class="portfolio-grid">
+      {% assign items = group.items | sort: "order", "last" %}
+      {% for post in items %}
+        {% include archive-portfolio-item.html %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endunless %}
 {% endfor %}

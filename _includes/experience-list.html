@@ -3,8 +3,9 @@
 <div class="xrow-list">
 {%- for job in site.data.experience -%}
 {%- assign logo_file = site.static_files | where: "path", job.logo | first -%}
+{%- assign logo_dark_file = nil -%}{%- if job.logo_dark -%}{%- assign logo_dark_file = site.static_files | where: "path", job.logo_dark | first -%}{%- endif -%}
 <div class="xrow">
-<div class="xrow__media xrow__media--logo">{% if job.url %}<a href="{{ job.url }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">{% endif %}{% if logo_file %}<img src="{{ base_path }}{{ job.logo }}" alt="{{ job.org }} logo" loading="lazy">{% else %}<span class="xrow__initials">{{ job.initials }}</span>{% endif %}{% if job.url %}</a>{% endif %}</div>
+<div class="xrow__media xrow__media--logo{% if logo_dark_file %} has-dark-logo{% endif %}">{% if job.url %}<a href="{{ job.url }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">{% endif %}{% if logo_file %}<img class="logo--light" src="{{ base_path }}{{ job.logo }}" alt="{{ job.org }} logo" loading="lazy">{% if logo_dark_file %}<img class="logo--dark" src="{{ base_path }}{{ job.logo_dark }}" alt="{{ job.org }} logo" loading="lazy">{% endif %}{% else %}<span class="xrow__initials">{{ job.initials }}</span>{% endif %}{% if job.url %}</a>{% endif %}</div>
 <div class="xrow__body">
 <div class="xrow__title">{{ job.role }} <span class="xrow__bar">|</span> {% if job.url %}<a href="{{ job.url }}" target="_blank" rel="noopener">{{ job.org }}</a>{% else %}{{ job.org }}{% endif %}</div>
 <div class="xrow__meta">{{ job.dates }}</div>

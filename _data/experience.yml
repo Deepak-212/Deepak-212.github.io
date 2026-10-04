@@ -1,6 +1,8 @@
 # Shown on /experience/, newest first.
 #   logo: drop the file at this path. If the file doesn't exist yet, a grey box with the
 #         org's initials is shown instead, so nothing breaks while you collect logos.
+#   logo_dark: optional second version for dark mode (e.g. a white logo). Without it, the
+#         logo sits on a small white tile in dark mode so it stays readable.
 #   description: a paragraph (Markdown). bullets: optional list. Use either or both.
 #   advisor: optional line shown under the dates, e.g. "Advised by ..."
 

@@ -1,7 +1,8 @@
 ---
 title: "Encirclement and Capture in 3D with Control Barrier Functions"
 collection: portfolio
-category: Research
+category: Research Projects
+order: 1
 description: "A volume-based control barrier function safety filter that lets four pursuers encircle and capture an evader in 3D, whatever strategy the evader uses."
 advisor: "Advised by Prof. Ashish Hota, Dept. of Electrical Engineering, IIT Kharagpur"        # uncomment and fill in if applicable
 excerpt: "Volume-Based Control Barrier Functions for Encirclement and Capture in 3D."

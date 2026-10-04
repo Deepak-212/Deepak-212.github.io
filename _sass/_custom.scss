@@ -430,3 +430,34 @@ html:not([data-theme="dark"]) .page--project {
   margin-top: 0.1rem;
   color: var(--global-text-color-light);
 }
+
+
+/* ==========================================================================
+   LOGOS IN DARK MODE
+   Default: the logo sits on a white rounded tile, so dark text and coloured
+   logos stay readable. If an entry has `logo_dark:`, that version is shown
+   in dark mode instead, without the tile.
+   ========================================================================== */
+.xrow__media--logo .logo--dark { display: none; }
+
+html[data-theme="dark"] {
+  .xrow__media--logo:not(.has-dark-logo) {
+    background: #fff;
+    border-radius: 12px;
+    padding: 10px;
+  }
+
+  .xrow__media--logo.has-dark-logo {
+    .logo--light { display: none; }
+    .logo--dark  { display: block; }
+  }
+}
+
+/* videos inside project figures (same treatment as images) */
+.project__figure video {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+}

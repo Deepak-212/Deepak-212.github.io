@@ -1,12 +1,13 @@
 ---
 title: "Toward Safe and Efficient Predictive Control for Spacecraft Proximity Operations"
 collection: portfolio
-category: Research
+category: Research Internship
+order: 1
 description: "Convex tube MPC for coupled 6-DoF spacecraft motion using Difference-of-Convex dynamics, deployed on the DISCOWER ATMOS free-flyer."
 advisor: "Caltech SURF Fellowship · Advised by Prof. Aaron D. Ames · with Yana Lishkova, Joe Moeller and Pedro Roque"
 excerpt: "Difference-of-Convex tube MPC for spacecraft proximity operations, from 6-DoF simulation to free-flyer hardware."
 header:
-  teaser: /images/dc-tmpc-atmos/cbfatmos.gif
+  teaser: /images/dc-tmpc-atmos/cbfatmos_teaser.webp
 ---
 
 <p style="font-size:0.9em; opacity:0.8;"><em>Submitted to ICRA. A detailed write-up with full results will follow once the review process is complete.</em></p>
@@ -29,8 +30,8 @@ The free-flyer is tracked by an OptiTrack motion-capture system, which provides 
 <!-- <figure class="project__figure" style="margin:0;">
   <img src="/images/dc-tmpc-atmos/optitrack_calibration.gif" alt="Setting up and calibrating the OptiTrack system">
   <figcaption>Setting up the OptiTrack system.</figcaption>
-</figure>
-</div> -->
+</figure> -->
+</div>
 
 ## Safety filter on hardware
 
@@ -38,7 +39,7 @@ Before closing the loop with MPC, the safety layer was tested on its own. A nomi
 
 <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:1.25rem; margin:1.75rem 0;">
 <figure class="project__figure" style="margin:0;">
-  <img src="/images/dc-tmpc-atmos/cbfatmos.gif" alt="CBF safety filter keeping the ATMOS free-flyer on the table">
+  <video src="/images/dc-tmpc-atmos/cbfatmos_web.mp4" autoplay loop muted playsinline preload="metadata" aria-label="CBF safety filter keeping the ATMOS free-flyer on the table"></video>
   <figcaption>Standalone CBF filter: the nominal command pushes outward, the filter keeps the robot on the table.</figcaption>
 </figure>
 <figure class="project__figure" style="margin:0;">

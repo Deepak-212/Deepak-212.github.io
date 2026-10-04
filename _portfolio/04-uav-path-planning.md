@@ -1,7 +1,8 @@
 ---
 title: "UAV Path Planning in Dynamic 3D Environments"
 collection: portfolio
-category: Research
+category: Research Projects
+order: 3
 description: "A space-time A* planner that routes multiple UAVs through 3D airspace with static and moving obstacles."
 team: "Team project with Adeetya Uppal, Magizhan V, and Sudeep Prajapati"
 excerpt: "Built a Space-Time A* planner that routes UAVs through 3D airspace with both static and moving obstacles."
