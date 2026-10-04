@@ -1,55 +1,66 @@
 ---
-title: "Aerodynamic Analysis of Concorde and Su-57 Nose Sections Using Schlieren Imaging"
+title: "Schlieren Imaging & Supersonic Aerodynamic Analysis"
 collection: portfolio
 category: Research
+description: "Schlieren imaging of scaled Concorde and Su-57 nose sections at Mach 2.2, compared against oblique-shock and Taylor-Maccoll theory."
+advisor: "Supervisor: Prof. Sandeep Saha, Dept. of Aerospace Engineering, IIT Kharagpur"
 excerpt: "Schlieren imaging of scaled Concorde and Su-57 nose models at Mach 2.2, compared against oblique-shock and Taylor-Maccoll theory."
 header:
   teaser: /images/Su57gif.gif
 ---
-<img src="/images/Su57gif.gif" style="width:100%; border-radius:8px; margin-bottom:25px;">
 
+The Concorde and the Su-57 sit at opposite ends of supersonic design philosophy: one is a slender, axisymmetric cruiser, the other a chined, faceted stealth fighter. We wanted to see how much that difference in geometry alone reshapes the shock in front of the aircraft. To find out, we machined scaled nose sections of both, visualized the shock structures over them at Mach 2.2 using schlieren imaging, and compared the measured shock angles against two levels of theory: 2D oblique-shock relations and the Taylor-Maccoll conical-flow equation.
 
+<figure class="project__figure">
+  <img src="/images/Su57gif.gif" alt="Schlieren video of the shock over the Su-57 nose">
+  <figcaption>Schlieren footage of the attached shock over the Su-57 nose at Mach 2.2.</figcaption>
+</figure>
 
-## Overview
-We visualized supersonic shock structures over scaled nose models of the Concorde and the Su-57 at Mach 2.2 using schlieren imaging, then checked the measured shock angles against two levels of theory: 2D oblique-shock relations and the Taylor-Maccoll conical-flow equation. The two aircraft sit at opposite ends of supersonic design philosophy — a slender, axisymmetric cruiser versus a chined, faceted stealth fighter — so the comparison is really a study in how geometry alone reshapes the shock.
+## Making the models
 
-## Model Manufacturing
-- Started from existing CAD/graphics files for both aircraft, isolated the nose sections, and lofted clean solid models scaled to fit the wind tunnel's 100 mm × 50 mm test section (Concorde: 85 mm tall, 25 mm max diameter; Su-57: 42.5 mm tall, 30 mm max diameter)
+We started from existing CAD and graphics files of both aircraft, isolated the nose sections, and lofted clean solid models scaled to fit the wind tunnel's 100 mm × 50 mm test section. The Concorde nose is 85 mm tall with a maximum diameter of 25 mm, and the Su-57 nose is 42.5 mm tall with a maximum diameter of 30 mm.
 
-<img src="/images/schlieren-cad.jpg" style="width:70%; border-radius:6px; margin: 12px 0;" alt="Concorde and Su-57 CAD nose models">
+<figure class="project__figure project__figure--md">
+  <img src="/images/schlieren-cad.jpg" alt="Concorde and Su-57 CAD nose models">
+  <figcaption>CAD models of the Concorde (left) and Su-57 (right) nose sections.</figcaption>
+</figure>
 
-- Machined both noses from mild steel to survive the tunnel's pressure loads: lathe-turned and drilled for a support-rod mount, then CNC-shaped (rough cut + smoothing pass) at the Central Workshop (SWISS Lab)
+Both noses were machined from mild steel so that they would survive the tunnel's pressure loads. Each was turned on a lathe and drilled for a support-rod mount, then shaped on a CNC machine at the Central Workshop (SWISS Lab) with a rough cut followed by a smoothing pass. We used electrical discharge machining (EDM) to separate each finished nose from its CNC holding stock without introducing mechanical stress or deformation. Finally, a support rod was brass-welded to each model; brass's low melting point kept heat distortion to a minimum and preserved the sharp tip, which is what makes the difference between an attached shock and a detached bow shock.
 
-<img src="/images/schlieren-cnc.jpg" style="width:70%; border-radius:6px; margin: 12px 0;" alt="Concorde and Su-57 nose sections mounted in the CNC chuck">
+<figure class="project__figure project__figure--md">
+  <img src="/images/schlieren-cnc.jpg" alt="Concorde and Su-57 nose sections mounted in the CNC chuck">
+  <figcaption>Nose sections mounted in the CNC chuck.</figcaption>
+</figure>
 
-- Used EDM (electrical discharge machining) to cleanly separate the finished nose from the CNC holding stock without inducing any mechanical stress or deformation
-- Brass-welded a support rod to each model — brass's low melting point kept heat distortion minimal, preserving the sharp tip that's critical for getting an attached (rather than bow) shock
+<figure class="project__figure project__figure--sm">
+  <img src="/images/schlieren-final-models.jpg" alt="Finished Concorde and Su-57 nose specimens with support rods">
+  <figcaption>The finished models with their support rods.</figcaption>
+</figure>
 
-<img src="/images/schlieren-final-models.jpg" style="width:60%; max-width:400px; display:block; margin: 12px auto; border-radius:6px;" alt="Finished Concorde and Su-57 nose specimens with support rods">
+## The schlieren setup
 
+We built a classic single-mirror schlieren rig. Light from a point source is collimated by a parabolic mirror, passes through the test section, and is refocused onto a knife edge. Density gradients in the flow deflect the light rays slightly, and the knife edge turns those deflections into visible changes in brightness. Before each run, we aligned the knife edge using a candle flame, whose plume gives an immediate, high-contrast check that the system is in focus.
 
-## Schlieren Setup 
-- Built a classic single-mirror schlieren rig: point light source collimated through a parabolic mirror, refocused through the test section onto a knife edge that converts density-gradient-driven ray deflection into visible brightness variation
-- Used a candle flame to align the knife edge before each run — its plume gives an immediate, high-contrast check that the setup is in focus
-- Ran the blowdown-type supersonic tunnel (6 atm supply, Mach 2.2) across four angles of attack (0°, 5°, 8°, 10°) for each model, recording video and extracting frames via a MATLAB script for the clearest shock structure at each angle
+Each model was tested in a blowdown supersonic tunnel (6 atm supply, Mach 2.2) at four angles of attack: 0°, 5°, 8°, and 10°. We recorded video of every run and used a MATLAB script to extract the frames showing the clearest shock structure at each angle.
 
-## Results & Analysis
-- **Concorde:** a straight, attached conical shock at every angle of attack, with only mild top/bottom asymmetry — consistent with its slender, nearly axisymmetric ogive nose
-- **Su-57:** a curved, attached shock at every angle, with much stronger top/bottom asymmetry — its chined, faceted geometry breaks axisymmetry and drives real 3D effects
-- **Theory check:** modeling the Concorde nose as a 12° half-angle cone, the Taylor-Maccoll equation predicts a shock angle of 27.24°, matching the experimental ~27° almost exactly. A 2D wedge (θ-β-M) approximation of the same geometry overpredicts the shock angle by 5-10° — a direct, measured demonstration of the **3D relieving effect**, where a 3D body produces a weaker shock than an equivalent 2D wedge because flow can escape laterally around the body
-- **AoA sensitivity:** the Concorde's shock angle barely moves with angle of attack (its smooth ogive shape lets flow expand laterally and compress nearly symmetrically), while the Su-57's shock angle shifts sharply — its sharp chines act like intensified wedge deflections that strengthen the upper shock and weaken the lower one as AoA increases
+## Results
 
-**Photos**
-<div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:20px;">
-  <img src="/images/schlieren-concorde.png" style="width:48%; border-radius:6px;" alt="Concorde nose schlieren image">
-  <img src="/images/schlieren-su57.png" style="width:48%; border-radius:6px;" alt="Su-57 nose schlieren shock wave, animated">
+The two noses behaved very differently. The Concorde produced a straight, attached conical shock at every angle of attack, with only mild asymmetry between the top and bottom, which is consistent with its slender, nearly axisymmetric ogive shape. The Su-57 produced a curved, attached shock at every angle, with much stronger top-to-bottom asymmetry: its chined, faceted geometry breaks axisymmetry and introduces genuinely three-dimensional effects.
+
+<figure class="project__figure">
+  <div class="project__figure-row">
+    <img src="/images/schlieren-concorde.png" alt="Concorde nose schlieren image">
+    <img src="/images/schlieren-su57.png" alt="Su-57 nose schlieren image">
+  </div>
+  <figcaption>Schlieren images of the Concorde (left) and Su-57 (right) noses.</figcaption>
+</figure>
+
+The comparison with theory was the clearest result. Modelling the Concorde nose as a cone with a 12° half-angle, the Taylor-Maccoll equation predicts a shock angle of 27.24°, which matches the measured value of about 27° almost exactly. A 2D wedge (θ-β-M) approximation of the same geometry overpredicts the shock angle by 5–10°. This gap is a direct measurement of the **3D relieving effect**: a three-dimensional body produces a weaker shock than an equivalent 2D wedge because the flow can escape sideways around it.
+
+The two noses also responded differently to angle of attack. The Concorde's shock angle barely changed, since its smooth ogive shape lets the flow expand laterally and compress almost symmetrically. The Su-57's shock angle shifted sharply instead. Its sharp chines act like stronger wedge deflections, so as the angle of attack increases they strengthen the upper shock and weaken the lower one.
+
+<div class="project__video">
+  <iframe src="https://www.youtube.com/embed/Woik4Ry7Jgw" title="Schlieren imaging demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-**Video**
-<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:8px; margin-bottom:20px;">
-  <iframe src="https://www.youtube.com/embed/Woik4Ry7Jgw" title="Schlieren imaging demo" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-**Report & Slides**
-<a href="/files/Schlieren_Report_11zon.pdf" class="btn" target="_blank" rel="noopener">View Report</a>
-<a href="/files/Schlieren_Presentation.pdf" class="btn" target="_blank" rel="noopener">View Slides</a>
+The full [report](/files/Schlieren_Report_11zon.pdf) and [slides](/files/Schlieren_Presentation.pdf) are available for more detail.

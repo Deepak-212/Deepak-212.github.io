@@ -2,6 +2,7 @@
 #   logo: drop the file at this path. If the file doesn't exist yet, a grey box with the
 #         org's initials is shown instead, so nothing breaks while you collect logos.
 #   description: a paragraph (Markdown). bullets: optional list. Use either or both.
+#   advisor: optional line shown under the dates, e.g. "Advised by ..."
 
 - role: "Summer Undergraduate Research Fellow"
   org: "California Institute of Technology (Caltech)"
@@ -31,5 +32,6 @@
   url: https://www.nal.res.in/
   logo: /images/logos/nal.png
   dates: "Jun '25 – Jul '25"
+  advisor: "Advised by Dr. Guruganesh R, Sr. Principal Scientist"
   bullets:
     - "Developed a nonlinear 6-DOF flight dynamics model of a high altitude airship in MATLAB/Simulink."

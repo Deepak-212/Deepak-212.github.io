@@ -8,6 +8,7 @@
 <div class="xrow__body">
 <div class="xrow__title">{{ job.role }} <span class="xrow__bar">|</span> {% if job.url %}<a href="{{ job.url }}" target="_blank" rel="noopener">{{ job.org }}</a>{% else %}{{ job.org }}{% endif %}</div>
 <div class="xrow__meta">{{ job.dates }}</div>
+{%- if job.advisor -%}<div class="xrow__advisor">{{ job.advisor }}</div>{%- endif -%}
 {%- if job.description -%}<div class="xrow__desc">{{ job.description | markdownify }}</div>{%- endif -%}
 {%- if job.bullets -%}<ul class="xrow__bullets">{% for b in job.bullets %}<li>{{ b | markdownify | remove: "<p>" | remove: "</p>" | strip }}</li>{% endfor %}</ul>{%- endif -%}
 </div>
