@@ -12,7 +12,7 @@ header:
 In multi-agent pursuit–evasion, chasing the evader directly is rarely enough: a faster or cleverer evader simply slips through the gaps between the pursuers. A more reliable strategy is to first surround the evader and then tighten the net. This project studies that problem in three dimensions, where four speed-limited pursuers must trap a single evader inside their convex hull, a tetrahedron, and then close in for capture, without ever letting it escape along the way.
 
 <figure class="project__figure">
-  <img src="/images/cbf-pursuit-evasion/normal.gif" alt="Four pursuers encircling and capturing an evader in 3D">
+  <img src="/images/cbf-pursuit-evasion/pursuit_normal.gif" alt="Four pursuers encircling and capturing an evader in 3D">
   <figcaption>Four pursuers keep the evader enclosed in their tetrahedron while closing in for capture.</figcaption>
 </figure>
 
