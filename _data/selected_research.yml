@@ -15,17 +15,22 @@
 #     - label: video
 #       url: https://youtube.com/...
 
-- title: "Safe Reinforcement Learning for Fixed-Wing UAV Control"
-  venue: "Research Intern · Robotic Research Centre, IIIT Hyderabad"
-  image: /images/uav-rl.png
-  url: /portfolio/01-uav-rl/
-  description: "A 6-DOF fixed-wing simulator and Gymnasium environment for training a PPO altitude-tracking controller, with a control barrier function safety filter that enforces stall-avoidance constraints."
+- title: "Encirclement and Capture in 3D with Control Barrier Functions"
+  venue: "Advised by Prof. Ashish Hota, Dept. of Electrical Engineering, IIT Kharagpur"
+  image: /images/cbf-pursuit-evasion/pursuit_bep.gif
+  url: /portfolio/05-cbf-pursuit-evasion/
+  description: "A volume-based control barrier function safety filter for pursuit-evasion game in $\\mathbb{R}^3$"
+# - title: "Safe Reinforcement Learning for Fixed-Wing UAV Control"
+#   venue: "Research Intern · Robotic Research Centre, IIIT Hyderabad"
+#   image: /images/uav-rl.png
+#   url: /portfolio/01-uav-rl/
+#   description: "A 6-DOF fixed-wing simulator and Gymnasium environment for training a PPO altitude-tracking controller, with a control barrier function safety filter that enforces stall-avoidance constraints."
 
-- title: "UAV Path Planning in Dynamic 3D Environments"
-  venue: "Team project"
-  image: https://github.com/Deepak-212/UAV-Path-Planning/raw/main/simulation/multi_uav_simulation_dynamic_obstacles.gif
-  url: /portfolio/04-uav-path-planning/
-  description: "Extending A* from 3D space to 4D space-time so UAVs can reason about when airspace is occupied: waiting out moving obstacles and deconflicting multiple vehicles."
-  links:
-    - label: code
-      url: https://github.com/Deepak-212/UAV-Path-Planning
+# - title: "UAV Path Planning in Dynamic 3D Environments"
+#   venue: "Team project"
+#   image: https://github.com/Deepak-212/UAV-Path-Planning/raw/main/simulation/multi_uav_simulation_dynamic_obstacles.gif
+#   url: /portfolio/04-uav-path-planning/
+#   description: "Extending A* from 3D space to 4D space-time so UAVs can reason about when airspace is occupied: waiting out moving obstacles and deconflicting multiple vehicles."
+#   links:
+#     - label: code
+#       url: https://github.com/Deepak-212/UAV-Path-Planning
