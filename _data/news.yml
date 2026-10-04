@@ -1,5 +1,10 @@
 # Newest first. `text` supports Markdown: **bold**, [links](https://...), emoji.
 # Keep dates short, e.g. "Jun '26".
+- date: "Sep '26"
+  text: "My summer research work at Caltech is under review for publication **ICRA 2027**!."
+  
+- date: "Aug '26"
+  text: "My thesis work on **Autonomous spacecraft rendevous and docking using RL-MPC frameworks** got accepted for presentation at AIAA SciTech Forum 2027 under the session Reinforcement Learning for Space Robotics."
 
 - date: "Jun '26"
   text: "Started as a **Summer Undergraduate Research Fellow at Caltech** in the AMBER Lab, working with Prof. Aaron Ames and Dr. Yana Lishkova on safe control for autonomous spacecraft."
