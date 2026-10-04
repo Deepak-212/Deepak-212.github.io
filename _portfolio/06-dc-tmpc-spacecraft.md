@@ -22,8 +22,8 @@ We derive an analytical DC representation of the spacecraft model and also explo
 
 The free-flyer is tracked by an OptiTrack motion-capture system, which provides the pose measurements used by the state estimator.
 
-<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:1.25rem; margin:1.75rem 0;">
-<figure class="project__figure" style="margin:0;">
+<!-- <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:1.25rem; margin:1.75rem 0;"> -->
+<figure class="project__figure project__figure--sm">
   <img src="/images/dc-tmpc-atmos/optitrack_setup.jpg" alt="OptiTrack motion-capture setup around the ATMOS test table">
   <figcaption>OptiTrack motion-capture setup around the test table.</figcaption>
 </figure>
@@ -31,7 +31,7 @@ The free-flyer is tracked by an OptiTrack motion-capture system, which provides 
   <img src="/images/dc-tmpc-atmos/optitrack_calibration.gif" alt="Setting up and calibrating the OptiTrack system">
   <figcaption>Setting up the OptiTrack system.</figcaption>
 </figure> -->
-</div>
+<!-- </div> -->
 
 ## Safety filter on hardware
 
