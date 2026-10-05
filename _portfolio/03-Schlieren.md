@@ -7,13 +7,13 @@ description: "Schlieren imaging of scaled Concorde and Su-57 nose sections at Ma
 advisor: "Supervisor: Prof. Sandeep Saha, Dept. of Aerospace Engineering, IIT Kharagpur"
 excerpt: "Schlieren imaging of scaled Concorde and Su-57 nose models at Mach 2.2, compared against oblique-shock and Taylor-Maccoll theory."
 header:
-  teaser: /images/Su57gif.gif
+  teaser: /images/su57-schlieren-thumb.webp
 ---
 
 The Concorde and the Su-57 sit at opposite ends of supersonic design philosophy: one is a slender, axisymmetric cruiser, the other a chined, faceted stealth fighter. We wanted to see how much that difference in geometry alone reshapes the shock in front of the aircraft. To find out, we machined scaled nose sections of both, visualized the shock structures over them at Mach 2.2 using schlieren imaging, and compared the measured shock angles against two levels of theory: 2D oblique-shock relations and the Taylor-Maccoll conical-flow equation.
 
 <figure class="project__figure">
-  <img src="/images/Su57gif.gif" alt="Schlieren video of the shock over the Su-57 nose">
+  <video src="/images/su57-schlieren.mp4" autoplay loop muted playsinline aria-label="Schlieren video of the shock over the Su-57 nose"></video>
   <figcaption>Schlieren footage of the attached shock over the Su-57 nose at Mach 2.2.</figcaption>
 </figure>
 

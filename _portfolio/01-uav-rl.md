@@ -4,7 +4,7 @@ collection: portfolio
 category: Research Projects
 order: 2
 description: "Altitude tracking for a 6-DOF fixed-wing aircraft with a learned controller and a control barrier function safety filter."
-role: "Research Intern, Robotic Research Centre, IIIT Hyderabad"
+role: "Research Intern, Robotics Research Center, IIIT Hyderabad"
 excerpt: "Developed a safe RL controller for altitude tracking of a 6-DOF fixed-wing UAV."
 header:
   teaser: /images/uav-rl.png

@@ -15,13 +15,19 @@
 #     - label: video
 #       url: https://youtube.com/...
 
+- title: "Toward Safe and Efficient Predictive Control for Spacecraft Proximity Operations"
+  venue: "Caltech SURF · Advised by Prof. Aaron D. Ames"
+  image: /images/dc-tmpc-atmos/cbfatmos_teaser.webp
+  url: /portfolio/06-dc-tmpc-spacecraft/
+  description: "Convex tube MPC for coupled 6-DoF spacecraft motion using Difference-of-Convex dynamics, deployed on the DISCOWER ATMOS free-flyer."
+
 - title: "Encirclement and Capture in 3D with Control Barrier Functions"
   venue: "Advised by Prof. Ashish Hota, Dept. of Electrical Engineering, IIT Kharagpur"
-  image: /images/cbf-pursuit-evasion/pursuit_bep.gif
+  image: /images/cbf-pursuit-evasion/pursuit_bep_thumb.webp
   url: /portfolio/05-cbf-pursuit-evasion/
-  description: 'A volume-based control barrier function safety filter for pursuit-evasion game in $\mathbb{R}^3$'
+  description: 'A volume-based control barrier function safety filter for a pursuit–evasion game in ℝ³.'
 # - title: "Safe Reinforcement Learning for Fixed-Wing UAV Control"
-#   venue: "Research Intern · Robotic Research Centre, IIIT Hyderabad"
+#   venue: "Research Intern · Robotics Research Center, IIIT Hyderabad"
 #   image: /images/uav-rl.png
 #   url: /portfolio/01-uav-rl/
 #   description: "A 6-DOF fixed-wing simulator and Gymnasium environment for training a PPO altitude-tracking controller, with a control barrier function safety filter that enforces stall-avoidance constraints."
